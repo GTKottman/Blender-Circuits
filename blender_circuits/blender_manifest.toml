@@ -1,0 +1,16 @@
+schema_version = "1.0.0"
+
+id = "circuit_lab"
+version = "1.0.0"
+name = "Circuit Lab (MCP bridge)"
+tagline = "AI-driven circuit design, simulation and electron-flow animation"
+maintainer = "Blender-Circuits contributors"
+type = "add-on"
+tags = ["Animation", "Object", "Scene"]
+
+blender_version_min = "4.2.0"
+license = ["SPDX:GPL-3.0-or-later"]
+
+[permissions]
+network = "Runs a local socket server so an MCP client (AI assistant) can control the scene"
+files = "Renders images/videos and saves .blend files where the AI is asked to"

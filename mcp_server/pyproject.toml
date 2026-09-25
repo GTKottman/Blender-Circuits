@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "blender-circuits-mcp"
+version = "1.0.0"
+description = "MCP server that lets AI assistants design, simulate and animate electronic circuits in Blender"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = ["mcp>=1.2"]
+
+[project.scripts]
+blender-circuits-mcp = "blender_circuits_mcp.server:main"
+
+[tool.setuptools]
+packages = ["blender_circuits_mcp"]

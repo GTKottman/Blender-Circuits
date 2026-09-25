@@ -87,6 +87,11 @@ also ships an `explainer_video` prompt and a `circuitlab://guide` resource that 
 6. `frame_circuit`, `focus_on`, `camera_path`, `orbit_camera`
 7. `preview(time)` to look at key frames → `render_animation("renders/video.mp4")`
 
+**Claude skill:** `.claude/skills/circuit-explainer-video/` teaches Claude how to direct these tools: beat
+sheets, verified layout recipes, timing rules, preview checks and a narration script. Claude Code picks it up
+automatically when you work in this repo. To use it elsewhere, copy the folder into `~/.claude/skills/`, or
+install the packaged `.skill` file.
+
 `examples/led_explainer_video.py` produces a complete 20-second video by calling the same commands directly. It's
 also a useful reference for command names and parameters.
 
